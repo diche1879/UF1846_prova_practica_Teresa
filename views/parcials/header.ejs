@@ -1,0 +1,17 @@
+
+<!-- Código para crear un parcial para importar en cada plantilla como siempre se repite -->
+<div>
+    <img src="/logo/bunny.webp" alt="" />
+    <h1>White Rabbit Inc</h1>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <% departamentos.forEach(element => { %>
+            <li><a href="/<%= element.departamento %>">
+                    <%=element.departamento %>
+                </a></li>
+            <%}) %>;
+    </ul>
+</nav>

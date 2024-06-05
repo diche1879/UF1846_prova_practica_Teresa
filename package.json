@@ -1,0 +1,31 @@
+{
+  "name": "uf1846_prova_practica_enunciat",
+  "version": "1.0.0",
+  "description": "Prueba Practica Node js ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diche1879/UF1846_prova_practica_Teresa.git"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "Express",
+    "Ejs"
+  ],
+  "author": "Teresa Gabsarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diche1879/UF1846_prova_practica_Teresa/issues"
+  },
+  "homepage": "https://github.com/diche1879/UF1846_prova_practica_Teresa#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
+}

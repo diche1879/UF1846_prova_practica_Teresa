@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- importrl parcial -->
+    <%- include('./parcials/head') %>
+</head>
+
+<body>
+    <header>
+        <!-- importrl parcial -->
+        <%- include('./parcials/header') %>
+    </header>
+    <main>
+        <h2>
+            <%= title %>
+        </h2>
+
+        <section>
+        <!-- Iteramos sobre el array de objetos obtenidos desde la petición
+        y por cada objeto/persona creamos una tarjeta -->
+            <% team.forEach(el=>{ %>
+                <a href="team/<%= el.id %>">
+                    <div class="card <%= el.departamento %>">
+                        <img src="/img_customers/<%= el.foto %>" alt="">
+                        <h3>
+                            <%= el.nombre %>
+                                <%= el.apellido %>
+                        </h3>
+                        <p>
+                            <%= el.email %>
+                        </p>
+                        <hr>
+                        <p>
+                            <%= el.departamento %>
+                        </p>
+                    </div>
+                </a>
+                <% }) %>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>
